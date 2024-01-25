@@ -1,1 +1,1 @@
-**PROjet fait par Luke JONES, Tao Bourmaud et Arnaud CLAVIER**
+**Projet fait par Luke JONES, Tao Bourmaud et Arnaud CLAVIER**
