@@ -1,4 +1,4 @@
-name: CI pour Appli Python
+name: CI pour Appli Python / Checkout
 
 on:
   push:
@@ -6,5 +6,11 @@ on:
       - 'release'
 
 jobs:
-
-     # à compléter
+  ci-cd-tao-luke:  
+    runs-on : ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: python my_script.py
