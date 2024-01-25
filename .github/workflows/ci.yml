@@ -18,8 +18,6 @@ jobs:
 
       - name : Creation d'un répertoire pour le bundle
         run: mkdir bundle-lab2
-      - name : zdzd
-        run: cp -r src/ bundle-lab2/
       - name : Creation zip
         run: zip -r bundle.zip bundle-lab2
       - name : Suppression
