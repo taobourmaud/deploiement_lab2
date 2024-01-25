@@ -15,7 +15,6 @@ jobs:
           python-version: '3.10'
           cache: 'pip'
       - run: pip install -r code-appli-python/vote/requirements.txt
-      - run: python code-appli-python/vote/app.py
 
       - name : Creation d'un répertoire pour le bundle
         run: mkdir bundle-lab2
