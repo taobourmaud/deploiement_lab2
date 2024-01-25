@@ -1,7 +1,9 @@
 name: CI pour Appli Python
 
 on:
-     # (à compléter)
+  push:
+    branches:
+      - 'release'
 
 jobs:
 
