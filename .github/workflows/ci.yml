@@ -1,0 +1,8 @@
+name: CI pour Appli Python
+
+on:
+     # (à compléter)
+
+jobs:
+
+     # à compléter
