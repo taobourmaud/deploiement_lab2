@@ -14,3 +14,13 @@ jobs:
         with:
           python-version: '3.10'
       - run: python my_script.py
+
+      - name : Creation d'un répertoire pour le bundle
+        run: mkdir bundle-lab2
+      - name : zdzd
+        run: cp -r src/ bundle-lab2/
+      - name : Creation zip
+        run: zip -r bundle.zip bundle-lab2
+      - name : Suppression
+        run: rm -rf bundle-lab2
+
