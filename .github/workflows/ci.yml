@@ -40,13 +40,10 @@ jobs:
       - name: Creation zip
         run: zip -r bundle.zip bundle-lab2
 
-      - name: Suppression
-        run: rm -rf bundle-lab2
-
       - name: Upload d'artéfacts
         uses: actions/upload-artifact@v4
         with:
-          name: bundle.zip
+          name: python-bundle
           path: bundle.zip
 
   publish:
@@ -57,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-bundle
-          path: /src
+          path: bundle.zip
 
       - name: Create Release
         uses: actions/create-release@v1
