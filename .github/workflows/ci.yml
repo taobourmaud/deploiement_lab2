@@ -44,7 +44,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-bundle
-          path: bundle.zip
+          path: bundle-lab2/bundle.zip
 
   publish:
     runs-on: ubuntu-latest
@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: python-bundle
-          path: bundle.zip
+          path: bundle-lab2/bundle.zip
 
       - name: Create Release
         uses: actions/create-release@v1
